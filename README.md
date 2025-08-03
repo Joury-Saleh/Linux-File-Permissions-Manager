@@ -46,8 +46,7 @@ So:
 chmod 775 filename
 ```
 sets permissions to `rwxrwxr-x`.
-نسخ
-تحري
+
 ## Flowchart Included
 
 ![photo](Flowchart-Linux-File-Permissions-Flowchart-with-chmod-Command.png)
@@ -87,7 +86,5 @@ print(f"Permissions for {file_path} set to rwxrwxr-x (775)")
 
 3. Confirm the result: `ls -l your_file.py`
 
-نسخ
-تحرير
 
 
