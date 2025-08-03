@@ -51,12 +51,6 @@ sets permissions to `rwxrwxr-x`.
 
 ![photo](Flowchart-Linux-File-Permissions-Flowchart-with-chmod-Command.png)
 
-📌 The included image `permissions_flowchart.png` visually explains:
-- When and why to change permissions
-- How to convert symbolic to numeric
-- What `chmod` command to use
-
-
 
 ## Python Script Example
 
