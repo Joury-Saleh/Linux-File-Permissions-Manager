@@ -29,7 +29,7 @@ w = Write (2)
 
 x = Execute (1)
 
-- = No permission
+[-] = No permission
 
 ## Permission Breakdown
 
