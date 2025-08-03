@@ -10,14 +10,54 @@ This project explains and implements how to **understand and set Linux file perm
 - Uses Python to apply permissions using `os.chmod()`
 - Visualizes the workflow using a flowchart
 
+
+## Understanding Linux File Permissions
+Linux file permissions are represented by 10 characters like:
+`-rwxrwxr-x`
+
+| Character Position | Description                                 |
+| ------------------ | ------------------------------------------- |
+| 1st                | File type (`-` for file, `d` for directory) |
+| 2–4                | Owner permissions (`rwx`)                   |
+| 5–7                | Group permissions (`rwx`)                   |
+| 8–10               | Others permissions (`r-x`)                  |
+
+## Permission Symbols:
+r = Read (4)
+
+w = Write (2)
+
+x = Execute (1)
+
+- = No permission
+
+## Permission Breakdown
+
+| Entity    | Permission | Numeric |
+| --------- | ---------- | ------- |
+| Owner     | rwx        | 7       |
+| Group     | rwx        | 7       |
+| Others    | r-x        | 5       |
+| **Total** | rwxrwxr-x  | **775** |
+
+So:
+
+```  bash
+chmod 775 filename
+```
+sets permissions to `rwxrwxr-x`.
+نسخ
+تحري
 ## Flowchart Included
 
-![photo]
+![photo](Flowchart-Linux-File-Permissions-Flowchart-with-chmod-Command.png)
 
 📌 The included image `permissions_flowchart.png` visually explains:
 - When and why to change permissions
 - How to convert symbolic to numeric
 - What `chmod` command to use
+
+
 
 ## Python Script Example
 
@@ -37,14 +77,6 @@ os.chmod(file_path, permissions)
 print(f"Permissions for {file_path} set to rwxrwxr-x (775)")
 ```
 
-## Permission Breakdown
-
-| Entity    | Permission | Numeric |
-| --------- | ---------- | ------- |
-| Owner     | rwx        | 7       |
-| Group     | rwx        | 7       |
-| Others    | r-x        | 5       |
-| **Total** | rwxrwxr-x  | **775** |
 
 
 ##  How to Use
